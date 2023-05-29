@@ -1,0 +1,37 @@
+
+##
+NET "Clock" TNM_NET = "sys_clk_pin";
+NET "Clock" LOC = T8;
+TIMESPEC TS_sys_clk_pin = PERIOD "sys_clk_pin" 50000 KHz;
+##
+
+########LED Pin define#####################
+#G 7segment
+NET "to_LED[0]" LOC = D5 | IOSTANDARD = LVCMOS33;
+#F
+NET "to_LED[1]" LOC = E7 | IOSTANDARD = LVCMOS33;
+#E
+NET "to_LED[2]" LOC = D6 | IOSTANDARD = LVCMOS33;
+#D
+NET "to_LED[3]" LOC = F7 | IOSTANDARD = LVCMOS33;
+#C
+NET "to_LED[4]" LOC = C5 | IOSTANDARD = LVCMOS33;
+#B
+NET "to_LED[5]" LOC = E6 | IOSTANDARD = LVCMOS33;
+#A
+NET "to_LED[6]" LOC = C7 | IOSTANDARD = LVCMOS33;
+#dot
+#NET "Dot" LOC = C6 | IOSTANDARD = LVCMOS33;
+ 
+# Digit1
+NET "Selected_digit[0]" LOC = D8 | IOSTANDARD = LVCMOS33;
+# Digit2
+NET "Selected_digit[1]" LOC = E8 | IOSTANDARD = LVCMOS33;
+# Digit3
+NET "Selected_digit[2]" LOC = F9 | IOSTANDARD = LVCMOS33;
+# Digit4
+NET "Selected_digit[3]" LOC = F10 | IOSTANDARD = LVCMOS33;
+# Digit5
+NET "Selected_digit[4]" LOC = E10 | IOSTANDARD = LVCMOS33;
+# Digit6
+NET "Selected_digit[5]" LOC = D9 | IOSTANDARD = LVCMOS33;
